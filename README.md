@@ -27,7 +27,7 @@ Packages:  numpy, numba, os, tqdm, matplotlib
 1. Argon atoms 
 2. 20\*20 block
 3. Desired temperature follows the list: 5~100 Kelvin, every 5 Kelvin interval outputs a series of results.
-4. Thermostat is of kappa: $$\kappa = (\frac{T_{desired}}{T_{now}})^(\frac{1}{2}) $$ with a tolerance of 2e-4
+4. Thermostat is of kappa: $$\kappa = (\frac{T_{desired}}{T_{now}})^{\frac{1}{2}} $$ with a tolerance of 2e-4
 
 
 
@@ -56,4 +56,4 @@ Python 3.7及以上版本;
 1. 纯组分氩气单原子分子
 2. 正方形2D块体，长\*宽=20\*20
 3. 预设温度范围为5~100开尔文；每间隔5开尔文，输出一组结果
-4. 恒温器检测环境温度波动，当偏离设定温度2e-4时自动回调
+4. 恒温器检测环境温度波动，当偏离设定温度2e-4时自动回调。$$\kappa = (\frac{T_{desired}}{T_{now}})^{\frac{1}{2}} $$
