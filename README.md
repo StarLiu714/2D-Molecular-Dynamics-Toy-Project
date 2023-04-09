@@ -13,7 +13,7 @@
 
 [Preview in Jupyter Notebook](https://github.com/StarLiu714/2D-Molecular-Dynamics-Toy-Project/blob/20230408/Notebook_MD_2d_Argon_Proj.ipynb)   
 
-The output results are stored in the ./plot/ folder by default, and will be created if it does not exist
+The output results are stored in the ./plot/ directory by default, and will be created if it does not exist
 
 
 ## Environment & Packages
