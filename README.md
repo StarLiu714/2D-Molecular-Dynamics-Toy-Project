@@ -1,5 +1,8 @@
 # 2D-Molecular-Dynamics-Toy-Project
-
+<center class="half">
+  <image src= "https://github.com/StarLiu714/2D-Molecular-Dynamics-Toy-Project/blob/20230408/Lab-Report/assets/Hydro-20K-900.jpg" width=200\> <image src= "https://github.com/StarLiu714/2D-Molecular-Dynamics-Toy-Project/blob/20230408/Lab-Report/assets/StressTensor.png" width=200\>
+</center>
+ 
 ![Final Positions and related Hydrostatic pressure](https://github.com/StarLiu714/2D-Molecular-Dynamics-Toy-Project/blob/20230408/Lab-Report/assets/Hydro-20K-900.jpg) ![Stress Tensor](https://github.com/StarLiu714/2D-Molecular-Dynamics-Toy-Project/blob/20230408/Lab-Report/assets/StressTensor.png)
 ![Temperature Monitoring](https://github.com/StarLiu714/2D-Molecular-Dynamics-Toy-Project/blob/20230408/Lab-Report/assets/T_iters.jpg) ![Autocorrelation](https://github.com/StarLiu714/2D-Molecular-Dynamics-Toy-Project/blob/20230408/Lab-Report/assets/ACF.png)
 
