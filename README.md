@@ -1,5 +1,9 @@
 # 2D-Molecular-Dynamics-Toy-Project
 
+[output1](https://github.com/StarLiu714/2D-Molecular-Dynamics-Toy-Project/blob/20230408/Lab-Report/assets/image-20230317182124350.png)
+[output2](https://github.com/StarLiu714/2D-Molecular-Dynamics-Toy-Project/blob/20230408/Lab-Report/assets/image-20230317181913537.png)
+
+
 ## Quick guide
 
 [Project Codes](https://github.com/StarLiu714/2D-Molecular-Dynamics-Toy-Project/tree/20230408/Proj)  
@@ -18,7 +22,7 @@ Packages:  numpy, numba, os, tqdm, matplotlib
 
 ## Default Parameters
 1. Argon atoms 
-2. 20*20 block
+2. 20\*20 block
 3. Desired temperature follows the list: 5~100 Kelvin, every 5 Kelvin interval outputs a series of results.
 4. Thermostat is of kappa: $$\kappa = (\frac{T_{desired}}{T_{now}})^(\frac{1}{2}) $$ with a tolerance of 2e-4
 
@@ -44,6 +48,6 @@ Python 3.7及以上版本;
 
 ## 默认参数
 1. 纯组分氩气单原子分子
-2. 正方形2D块体，长*宽=20*20
+2. 正方形2D块体，长\*宽=20\*20
 3. 预设温度范围为5~100开尔文；每间隔5开尔文，输出一组结果
 4. 恒温器检测环境温度波动，当偏离设定温度2e-4时自动回调
