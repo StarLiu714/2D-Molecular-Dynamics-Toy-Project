@@ -1,12 +1,9 @@
 # 2D-Molecular-Dynamics-Toy-Project
 
 <center class="half">
-  <image src= "https://github.com/StarLiu714/2D-Molecular-Dynamics-Toy-Project/blob/20230408/Lab-Report/assets/Hydro-20K-900.jpg" width="400"\><image src= "https://github.com/StarLiu714/2D-Molecular-Dynamics-Toy-Project/blob/20230408/Lab-Report/assets/StressTensor.png" width="400"\>
+  <image src= "https://github.com/StarLiu714/2D-Molecular-Dynamics-Toy-Project/blob/20230408/Lab-Report/assets/Hydro-20K-900.jpg" width="600"\>
 </center>
- 
-<center class="half">
-  <image src= "https://github.com/StarLiu714/2D-Molecular-Dynamics-Toy-Project/blob/20230408/Lab-Report/assets/T_iters.jpg" width="400"\><image src= "https://github.com/StarLiu714/2D-Molecular-Dynamics-Toy-Project/blob/20230408/Lab-Report/assets/ACF.png" width="400"\>
-</center>
+
 
 
 
