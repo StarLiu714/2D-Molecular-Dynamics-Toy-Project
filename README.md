@@ -5,8 +5,6 @@
 </center>
 
 
-
-
 ## Quick guide
 
 [Project Codes](https://github.com/StarLiu714/2D-Molecular-Dynamics-Toy-Project/tree/20230408/Proj)  
@@ -15,6 +13,7 @@
 
 [Preview in Jupyter Notebook](https://github.com/StarLiu714/2D-Molecular-Dynamics-Toy-Project/blob/20230408/Notebook_MD_2d_Argon_Proj.ipynb)   
 
+The output results are stored in the ./plot/ folder by default, and will be created if it does not exist
 
 
 ## Environment & Packages
@@ -22,6 +21,7 @@
 Python 3.7+; 
 
 Packages:  numpy, numba, os, tqdm, matplotlib
+
 
 ## Default Parameters
 1. Argon atoms 
