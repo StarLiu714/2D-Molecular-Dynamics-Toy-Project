@@ -1,7 +1,7 @@
 # 2D-Molecular-Dynamics-Toy-Project
 
-[output1](https://github.com/StarLiu714/2D-Molecular-Dynamics-Toy-Project/blob/20230408/Lab-Report/assets/image-20230317182124350.png)
-[output2](https://github.com/StarLiu714/2D-Molecular-Dynamics-Toy-Project/blob/20230408/Lab-Report/assets/image-20230317181913537.png)
+![output1](https://github.com/StarLiu714/2D-Molecular-Dynamics-Toy-Project/blob/20230408/Lab-Report/assets/image-20230317182124350.png)
+![output2](https://github.com/StarLiu714/2D-Molecular-Dynamics-Toy-Project/blob/20230408/Lab-Report/assets/image-20230317181913537.png)
 
 
 ## Quick guide
