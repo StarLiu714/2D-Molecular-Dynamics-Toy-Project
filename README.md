@@ -18,7 +18,7 @@ The output results are stored in the ./plot/ folder by default, and will be crea
 
 ## Environment & Packages
 
-Python 3.7+; 
+`Python` 3.7+; 
 
 Packages:  numpy, numba, os, tqdm, matplotlib
 
