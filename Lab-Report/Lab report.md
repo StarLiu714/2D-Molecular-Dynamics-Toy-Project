@@ -8,7 +8,7 @@ Let us from Molecular Statics to Molecular Dynamics
 
 ### State the boundary conditions
 
-Block is of 2D finite non-periodic boundary condition with four free surfaces.
+The block under consideration is a 2D finite, non-periodic boundary condition system with four free surfaces.
 
 ![image-20230317181216129](assets/image-20230317181216129.png)
 
@@ -18,7 +18,7 @@ Block is of 2D finite non-periodic boundary condition with four free surfaces.
 
 ### Plot radial distribution function (RDF) of MS
 
-For Molecular Statics simulation, defaulted temperature is T=0K
+For Molecular Statics simulations, the default temperature is set at T=0K.
 
 ![image-20230317181328152](assets/image-20230317181328152.png)
 
@@ -28,7 +28,7 @@ For Molecular Statics simulation, defaulted temperature is T=0K
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ![image-20230317181354660](assets/image-20230317181354660.png) | ![image-20230317181357765](assets/image-20230317181357765.png) |
 
-To examine whether the MS iterations achieve physiological convergence, we should check **Total (Potential) Energy**, **MaxForce**, and **Hydrostatic Pressure**.
+To assess whether the Molecular Statics iterations have reached physiological convergence, we should examine the **Total (Potential) Energy**, **MaxForce**, and **Hydrostatic Pressure**.
 
 # Molecular Dynamics (MD) beginning with a square 20×20 lattice
 
@@ -36,7 +36,7 @@ To examine whether the MS iterations achieve physiological convergence, we shoul
 
 ### Verlet algorithm
 
-In this work, we carry out the 2-D block MD simulation according to Verlet Algorithm.
+In this study, we conduct a 2-D block Molecular Dynamics simulation using the Verlet Algorithm.
 
 The formula is as :
 
@@ -46,12 +46,14 @@ The formula is as :
 
 ### Start with zero velocities and zero kinetic energy.
 
-*The general procedure of Molecular Dynamics relaxation is as follows:*
+*The general procedure for Molecular Dynamics relaxation is as follows:*
 
-Rescale factor is initially equals 0.  
-Rescaling via the factor to put the kinetic energy, i.e. velocities, again to zero and continue the MD calculation again.  
-Repeat this until nearly equilibrium (tolerance of temperature fluctuation as 1 Kelvin.  
-At this point, output the relaxed structure.
+Initially, the rescale factor is set to 0.
+
+Rescaling is performed using the factor to reset the kinetic energy (i.e., velocities) to zero and continue with the MD calculation.
+This process is repeated until near equilibrium is achieved (with a temperature fluctuation tolerance of 1 Kelvin).
+
+At this point, the relaxed structure is output.
 
 #### Set relaxation parameters
 
@@ -125,11 +127,11 @@ When iteration=52000 it reaches the kappa threshold, and the loop was stopped.
 
 #### Using scaling of velocities, in steps of about 5K, up to about 85 K.
 
-The desired temperatures are set as 10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,100 Kelvin, respectively
+The target temperatures are set at 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, and 100 Kelvin, respectively.
 
-Tolerance of temperature is 1.5 Kelvin, at which the rescaling would be automatically carried out.
+The temperature tolerance is 1.5 Kelvin, at which point rescaling is automatically performed.
 
-The tolerance of kappa is 5e-4, below which the iteration would be terminated.
+The kappa tolerance is set at 5e-4, below which the iteration process is terminated.
 
 #### a. Analyze by display of atomic positions and RDF 
 
@@ -147,23 +149,23 @@ Again, the **axes scale** of the plot **varies** with temperature increasing.
 
 #### State and explain if it is crystalline, liquid or gas and explain
 
-0K, 2.5K, 5K, 10K, 15K, 20K, 25K:  
-Crystalline solid. The atoms are aligned and the whole block is commonly of a relatively low volume. And atom distribution shown in RDF is quite concentrated. With the increasing of temperature the RDF gets less shaper.
+0K, 2.5K, 5K, 10K, 15K, 20K, 25K:
+Crystalline solid. Atoms are aligned, and the overall block volume is relatively low. The atom distribution observed in the RDF is quite concentrated. As the temperature increases, the RDF becomes less sharp.
 
-30K, 35K, 40K:  
-The main body of the block is still a solid cluster. However, a few atoms has flew away. Probably it means that a little bit liquid has formed.
+30K, 35K, 40K:
+The main body of the block remains a solid cluster. However, a few atoms have moved away, possibly indicating the formation of a small amount of liquid.
 
-45K, 50K:  
-I think it is liquid. The atoms are almost fully and randomly located far away from the initial positions. The scope is about ±2000 angstrom in both x and y directions.
+45K, 50K:
+This phase appears to be liquid. Atoms are nearly fully and randomly dispersed far from their initial positions, spanning approximately ±2000 angstroms in both the x and y directions.
 
-55K & 65K:  
-Probably both gas or liquid exist. Most of atoms are in ±1500 angstrom however a few reached 3000 or farther.
+55K & 65K:
+Both gas and liquid phases may be present. Most atoms are within ±1500 angstroms, but a few have reached 3000 or farther.
 
-60K:  
-I think this plot of structure is not fully relaxed… So I just treated as a outlier which should be ignored.
+60K:
+The structure in this plot may not be fully relaxed, so it is treated as an outlier and should be disregarded.
 
-70K, 75K or above:  
-The structure should be gaseous. These plots shows that in the range of ±2000 angstrom, it seems likely uniform located, although at several temperatures the structures may be not fully relaxed since the out-from-loop condition and randomness of optimisation function along timesteps.
+70K, 75K or above:
+The structure should be gaseous. These plots indicate that within a range of ±2000 angstroms, atoms appear to be uniformly distributed. However, at certain temperatures, the structures may not be fully relaxed due to the termination conditions of the loop and the randomness of the optimization function across timesteps.
 
 #### Temperature
 
@@ -333,36 +335,36 @@ To reconstruct the model, one could follow the Jupyter Notebook (.ipynb file) lo
 
 #### The sequential-parallel dilemma has partly been solved
 
-I mentioned in HW3 that although *for-loop* is easy to understand and programming, it somehow not a procedure naturally happened in real world. To update the parameters of atoms, the better and more accurate way is to let it be a simultaneous procedure among all the atoms.
+In Homework 3, I mentioned that although the *for-loop* is easy to understand and implement, it does not naturally occur as a process in the real world. To update the parameters of atoms, a more accurate and effective approach is to allow simultaneous updates across all atoms.
 
-I talked it with TA, then in HW4, I rewrote several functions that let some of the parameters updating via tensors. It is not hard to understand for anybody already learnt Linear Algebra. We do not need to separate relative positions into Δr\_x, Δr\_y scalars anymore. We only need to vectorize them into a (400,400,2) tensor!
+After discussing this with the TA, I revised several functions in Homework 4 to update some parameters using tensors. This is not difficult to grasp for anyone already familiar with Linear Algebra. We no longer need to separate relative positions into Δr_x, Δr_y scalars; instead, we can convert them into a (400,400,2) tensor!
 
-An unexpected bonus is that, since we do not need 400\*2=800 voluations/assignments but only a one-step procedure of tensor plus tensor, the speed of main loop is incredibly fast. (Actually, the similar thing has been taught in MSE576 when PyTorch was applied. At that time, I merely focus on the credits and followed the demo to find which axis is related to another line but did not think deeply.)
+An unexpected benefit is that, since we only need a single tensor addition instead of 400\*2=800 evaluations/assignments, the main loop's speed has increased dramatically. (In fact, a similar concept was taught in MSE576 when using PyTorch. At that time, I focused mainly on the credits and followed the demo to determine which axis was related to another line, but I didn't delve into the subject.)
 
 #### Numba jit Precautions
 
-In addition to the very first important points mentioned in Zesheng’s recitation (avoid global variables, turn lists into nd.arrays, put iteration variables into indices), I found some things we need to further pay attention to:
+In addition to the key points mentioned in Zesheng's recitation (avoiding global variables, converting lists to nd.arrays, placing iteration variables in indices), I discovered several aspects that require further attention:
 
-1.  Reduce equation operations via package (np.sum, math.sqrt, np.power, etc.) and try using operations in origin python (+, -, \*, /, \*\*, %, etc.)
+1.  Minimize equation operations through packages (np.sum, math.sqrt, np.power, etc.) and try using native Python operations (+, -, *, /, **, %, etc.).
 
-2.  Reduce define local intermedium variables in the functions. It won’t lead to syntax error or warning however not good for running speed.
+2.  Reduce the use of local intermediate variables in functions. Although this doesn't result in syntax errors or warnings, it negatively impacts runtime speed.
 
-3.  It is better to split huge functions into small functions and put each of them under @jit.
+3.  It is preferable to break large functions into smaller ones and apply the @jit decorator to each.
 
-4.  It works really well on for-loops but less benefit on creating variables or arrays or some others.
+4.  This approach works well with for-loops but offers less benefit when creating variables, arrays, or other elements.
 
 #### For-loops versus tensor operations
 
-I should say tensor operations do not accelerate the iteration for all circumstances.
+I should note that tensor operations do not universally accelerate iterations. 
 
-For the updating function in main loop, it is clear that vectorization significantly speeds up the iterations.
+For the main loop's updating function, vectorization significantly increases iteration speed. 
 
-However for optimization functions, it highly depends on the size. In my observations, I think for-loops and split functions under @jit work better when atom number of system is not that large (10\*10, 15\*15), while batch parallelized updating (tensor operation) is faster when block is larger than (20\*20). We should carefully think the choice of function defining to make sure the relatively high relaxing efficiency.
+However, for optimization functions, the outcome depends on the system size. From my observations, for-loops and split functions under @jit work better for smaller systems (10\*10, 15\*15), while batch parallelized updating (tensor operations) is faster for larger systems (20\*20 and above). We must carefully consider our function definitions to ensure relatively high relaxation efficiency.
 
 #### Temperature chosen
 
-As shown in 20\*20 results, too much points at high temperature is meaningless since that would lead to similar results as previous ones.
+The 20\*20 results show that having too many data points at high temperatures is redundant, as they lead to similar outcomes as previous ones. 
 
-However in 25\*25 and 30\*30 results, it seems that too less temperatures have been chosen around 40-60K, then we cannot find the peak(s) which helps finding phase transformation.
+However, in the 25\*25 and 30\*30 results, it appears that too few temperatures were selected between 40-60K, making it difficult to identify peaks that indicate phase transitions.
 
-What I think is that probably we could run the automatic relaxing code applying *least square method*. For example, firstly calculate 0K and then 100K and then 50K and then 25K, etc., until we find one or more peaks in heat capacity.
+I suggest that we could implement an automatic relaxation code using the *least square method*. For example, we could start with 0K, then 100K, followed by 50K, 25K, and so on, until we locate one or more peaks in heat capacity.
