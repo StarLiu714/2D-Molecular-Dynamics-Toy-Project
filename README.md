@@ -11,7 +11,7 @@
 
 [Lab Report](https://github.com/StarLiu714/2D-Molecular-Dynamics-Toy-Project/blob/20230408/Lab-Report/Lab%20report.md)   
 
-[Preview in Jupyter Notebook](https://github.com/StarLiu714/2D-Molecular-Dynamics-Toy-Project/blob/20230408/Notebook_MD_2d_Argon_Proj.ipynb)   
+[Preview in Jupyter Notebook](https://github.com/StarLiu714/2D-Molecular-Dynamics-Toy-Project/blob/20230408/Notebook_MD_2d_Argon_Proj.zip)   
 
 The output results are stored in the ./plot/ directory by default, and will be created if it does not exist
 
@@ -42,7 +42,7 @@ Packages:  numpy, numba, os, tqdm, matplotlib
 
 [实验报告](https://github.com/StarLiu714/2D-Molecular-Dynamics-Toy-Project/blob/20230408/Lab-Report/Lab%20report.md)  
 
-[逐条结果可视化-ipynb](https://github.com/StarLiu714/2D-Molecular-Dynamics-Toy-Project/blob/20230408/Notebook_MD_2d_Argon_Proj.ipynb)  
+[逐条结果可视化-ipynb](https://github.com/StarLiu714/2D-Molecular-Dynamics-Toy-Project/blob/20230408/Notebook_MD_2d_Argon_Proj.zip)  
 
 输出结果默认存放于./plot/文件夹下，若不存在将创建
 
